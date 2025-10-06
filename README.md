@@ -60,6 +60,7 @@ You can now sign in at **[https://console.aws.amazon.com/](https://console.aws.a
 
 **📸 Screenshot:**  
 `/screenshots/search-iam.png`
+
 `/screenshots/iam-dashboard.png`
 
 ---
@@ -75,6 +76,7 @@ Easier to remember compare to full account number.
 
 **📸 Screenshot:**  
 `/screenshots/aws-account-create-alias.png`
+
 `/screenshots/create-alias.png`
 
 ---
@@ -101,11 +103,16 @@ Easier to remember compare to full account number.
 5. After login, open **IAM** again and enable **MFA** for this new admin user (same steps as for root).  
 
 **📸 Screenshots:**  
-`/screenshots/access-management.png`  
+`/screenshots/access-management.png` 
+
 `/screenshots/user-groups.png`  
+
 `/screenshots/create-user.png`
+
 `/screenshots/attach-to-group.png`
+
 `/screenshots/retrive-user-password.png`
+
 `/screenshots/sign-in-with-admin.png`
 
 
@@ -127,7 +134,9 @@ Easier to remember compare to full account number.
 
 **📸 Screenshots:**  
 `/screenshots/search-billing.png`  
+
 `/screenshots/budgets.png`  
+
 `/screenshots/create-budgets.png`  
 
 ---
