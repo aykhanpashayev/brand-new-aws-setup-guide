@@ -58,10 +58,10 @@ You can now sign in at **[https://console.aws.amazon.com/](https://console.aws.a
 4. Enter the two 6-digit codes → click **Assign MFA**.  
 ✅ You’ll see a green check mark next to “Root user MFA enabled.”  
 
-**📸 Screenshot:**  
-`/screenshots/search-iam.png`
+**📸 Screenshots:**  
 
-`/screenshots/iam-dashboard.png`
+![Search IAM](screenshots/search-iam.png)  
+![IAM Dashboard](screenshots/iam-dashboard.png)
 
 ---
 
@@ -72,12 +72,13 @@ You can now sign in at **[https://console.aws.amazon.com/](https://console.aws.a
 
 Your sign-in URL becomes:  
 https://aykhan-labs.signin.aws.amazon.com/console
-Easier to remember compare to full account number.
 
-**📸 Screenshot:**  
-`/screenshots/aws-account-create-alias.png`
+Easier to remember than the default account number.
 
-`/screenshots/create-alias.png`
+**📸 Screenshots:**  
+
+![AWS Account Create Alias](screenshots/aws-account-create-alias.png)  
+![Create Alias Window](screenshots/create-alias.png)
 
 ---
 
@@ -103,18 +104,13 @@ Easier to remember compare to full account number.
 5. After login, open **IAM** again and enable **MFA** for this new admin user (same steps as for root).  
 
 **📸 Screenshots:**  
-`/screenshots/access-management.png` 
 
-`/screenshots/user-groups.png`  
-
-`/screenshots/create-user.png`
-
-`/screenshots/attach-to-group.png`
-
-`/screenshots/retrive-user-password.png`
-
-`/screenshots/sign-in-with-admin.png`
-
+![Access Management](screenshots/access-management.png)  
+![User Groups](screenshots/user-groups.png)  
+![Create User](screenshots/create-user.png)  
+![Attach User to Group](screenshots/attach-to-group.png)  
+![Retrieve User Password](screenshots/retrive-user-password.png)  
+![Sign In with Admin](screenshots/sign-in-with-admin.png)
 
 ---
 
@@ -133,11 +129,10 @@ Easier to remember compare to full account number.
 ✅ You’ll now get an alert if your usage exceeds $10 in a month.
 
 **📸 Screenshots:**  
-`/screenshots/search-billing.png`  
 
-`/screenshots/budgets.png`  
-
-`/screenshots/create-budgets.png`  
+![Search Billing](screenshots/search-billing.png)  
+![Budgets Overview](screenshots/budgets.png)  
+![Create Budgets](screenshots/create-budgets.png)
 
 ---
 
@@ -152,7 +147,7 @@ Easier to remember compare to full account number.
 | Monthly budget alert | ✅ Active |
 
 Your account is now secured and cost-protected.  
-Use the **admin user** for everything; forget about sign in as **root**.
+Use the **admin user** for everything; sign in as **root** only for billing or recovery.
 
 ---
 
@@ -166,12 +161,14 @@ AWS will email you if it detects abnormal activity.
 ---
 
 ## 📁 Repository Structure  
+
 ```
 brand-new-aws-setup-guide/
 ├─ README.md
 ├─ screenshots/
 └─ notes/
 ```
+
 
 ---
 
@@ -182,3 +179,4 @@ brand-new-aws-setup-guide/
 
 ### © 2025 Aykhan Pashayev  
 Built for hands-on AWS learning and professional documentation.
+
