@@ -132,7 +132,7 @@ Easier to remember than the default account number.
 
 ![Search Billing](screenshots/search-billing.png)  
 ![Budgets Overview](screenshots/budgets.png)  
-![Create Budgets](screenshots/create-budgets.png)
+![Create Budgets](screenshots/create-budget.png)
 
 ---
 
