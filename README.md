@@ -19,11 +19,12 @@ The goal is to replicate how a Solutions Architect would set up a fresh environm
 ---
 
 ## 🗂️ Project Structure
+
 brand-new-aws-setup-guide/
-├─ README.md ← main documentation
-├─ notes/ ← written explanations or configs
-├─ screenshots/ ← setup visuals
-└─ resources/ ← references, PDFs, budgets
+├─ README.md          ← main documentation
+├─ notes/             ← written explanations or configs
+├─ screenshots/       ← setup visuals
+└─ resources/         ← references, PDFs, budgets
 
 ---
 
