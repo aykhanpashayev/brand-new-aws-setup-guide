@@ -23,13 +23,11 @@ This guide ensures every account is configured safely — with proper billing co
 ---
 
 ## 🧩 Project Folder Structure
+
 AWS-Account-Rebuild/
 ├── README.md ← main documentation (this file)
-
 ├── notes/ ← written explanations or configs
-
 ├── screenshots/ ← redacted images per stage
-
 └── resources/ ← reference files, PDFs, budgets, etc.
 
 ---
