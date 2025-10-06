@@ -1,124 +1,71 @@
-# 🧱 AWS Account Setup Guide  
-**Author:** Aykhan Pashayev  
-**Project Type:** Foundational AWS configuration & documentation  
-**Goal:** Build a **secure, isolated AWS environment** for learning, certification labs, and portfolio projects — configured to professional standards and fully documented step by step.  
+# ☁️ AWS Brand New Account Setup — Secure Cloud Foundation  
+A step-by-step guide to building a **secure, professional AWS account** from scratch — designed for learning, certifications, and portfolio projects.
 
 ---
 
-## 📘 Project Overview  
-This repository documents the full lifecycle of setting up a brand-new AWS account from scratch — exactly as a cloud engineer or solutions architect would do for a sandbox or demo environment.  
-
-Each stage follows a consistent structure:  
-- **Objective:** what & why  
-- **Console path / URL:** where to click  
-- **Actions:** numbered steps  
-- **Expected confirmation:** what success looks like  
-- **Screenshot / note instructions**  
-- **GitHub Log Note:** short summary for version control  
-
-💡 **Purpose:**  
-Many beginners skip the foundational setup and jump straight into services.  
-This guide ensures every account is configured safely — with proper billing controls, MFA, IAM separation, tagging, and documentation — just like a production-grade environment.
+## 🧭 Overview
+This project demonstrates how to configure a new AWS account following **real-world best practices** in security, billing control, and account organization.  
+The goal is to replicate how a Solutions Architect would set up a fresh environment for hands-on labs or client onboarding — with documentation clear enough for others to follow.
 
 ---
 
-## 🧩 Project Folder Structure
-
-AWS-Account-Rebuild/
-├── README.md ← main documentation (this file)
-├── notes/ ← written explanations or configs
-├── screenshots/ ← redacted images per stage
-└── resources/ ← reference files, PDFs, budgets, etc.
-
----
-
-## ⚙️ Recommended Tools Before You Start
-| Tool | Purpose |
-|------|----------|
-| **Password Manager** (Bitwarden, 1Password, etc.) | Securely store root & IAM credentials |
-| **MFA App** (Authy / Google Authenticator) | Protect email and AWS root login |
-| **Browser Profiles** (Chrome → Profile > Add) | Keep AWS work separate from personal browsing |
-| **Cloud Notebook** (CherryTree / Obsidian / Notion) | Keep quick setup notes |
-| **GitHub Account** | For version-controlling this documentation |
+## 🧰 Objectives
+- Establish a **clean, isolated AWS account** for experimentation and demos.  
+- Implement **root account security** (MFA, no access keys).  
+- Configure **budget alerts** and **Free Tier safeguards**.  
+- Create **IAM administrative access** with least-privilege principles.  
+- Build a **documented project structure** for screenshots, notes, and reusable templates.
 
 ---
 
-## 🧭 Stage 1 – Create a Dedicated AWS Account
-
-### 🎯 Objective
-Create a **brand-new AWS root account** that’s completely isolated from your personal one.  
-This will be your long-term lab and portfolio environment.  
-The key principle is **separation of concerns** — never mix production, study, or sandbox resources under one billing identity.
-
----
-
-### 🔗 Console Paths
-Sign-up: https://portal.aws.amazon.com/billing/signup
-
-Root sign-in: https://console.aws.amazon.com/
+## 🗂️ Project Structure
+brand-new-aws-setup-guide/
+├─ README.md ← main documentation
+├─ notes/ ← written explanations or configs
+├─ screenshots/ ← setup visuals
+└─ resources/ ← references, PDFs, budgets
 
 ---
 
-### 🪜 Steps
+## ⚙️ Stage 1 — Account Creation
+A new AWS account is created using a **dedicated email** and verified payment method.  
+The account is set to **Basic (Free)** support with region **N. Virginia (us-east-1)** for maximum service availability.  
+Only the root user is active at this stage and will later be secured and replaced by IAM administrators.
 
-1. **Create a dedicated email**  
-   - Use an email reserved only for AWS projects.  
-     Example: `aws.labs.aykhan@gmail.com`  
-   - 💡 For multiple environments later, use Gmail “+” aliases (`aws.labs+dev@…`, `aws.labs+test@…`).  
-   - Enable MFA on that email account first.  
+**Key actions**
+- Registered a separate AWS-only email address.  
+- Completed contact, verification, and payment setup (temporary $1 authorization).  
+- Selected *Basic (Free)* support plan.  
+- Logged in as root user and confirmed default region **us-east-1**.
 
-2. **Start AWS sign-up**  
-   - Go to the Sign-up link.  
-   - Choose **Personal Account**.  
-   - Enter the dedicated email, strong password, and account name (e.g., `Aykhan-Labs`).  
-
-3. **Provide contact details**  
-   - Select your country, enter full name, address, and phone.  
-   - Keep **Account Type: Personal** (simpler for lab billing).  
-
-4. **Add payment method**  
-   - Enter a valid debit/credit card.  
-   - AWS may hold **$1 USD** temporarily for verification.  
-
-5. **Verify identity**  
-   - Choose **SMS** or **Voice Call**, complete verification code.  
-
-6. **Select support plan**  
-   - Choose **Basic (Free)**.  
-
-7. **Confirm email verification**  
-   - Check inbox for “Welcome to Amazon Web Services.”  
-   - Confirm the link if prompted.  
-
-8. **Sign in as root**  
-   - Use the Root sign-in link above.  
-   - Sign in with the email (not an IAM user).  
-
-9. **Choose primary region**  
-   - In AWS Console → top-right Region dropdown → select **N. Virginia (us-east-1)**.  
-   - 💡 Widest service availability and best for docs and labs.  
-
-10. **Verify console access**  
-    - You should now see the AWS Management Console home page with your account name in the top-right menu.  
+**Outcome**
+- A clean, verified AWS root account ready for hardening and IAM configuration.  
+- Root login reserved strictly for billing and recovery tasks.
 
 ---
 
-### ✅ Expected Confirmation
-- You receive AWS welcome/verification emails.  
-- You can access Billing Console and AWS Console Home without errors.  
-- Region = **N. Virginia (us-east-1)** is visible.  
+## 📈 Upcoming Stages
+| Stage | Description |
+|-------|--------------|
+| **2. Root Hardening** | Enable MFA, remove root access keys, set recovery options. |
+| **3. Billing Controls** | Configure $5 budget, Free Tier alerts, enable Cost Explorer. |
+| **4. IAM Admin Setup** | Create admin user, assign AdministratorAccess, manage keys. |
+| **5. Project Structure** | Build S3 bucket `aws-account-setup-docs`, add tagging standards. |
+| **6. Verification** | Validate Free Tier, confirm billing $0, finalize documentation. |
 
 ---
 
-### 🧾 Security & Best-Practice Notes
-| Area | Recommendation |
-|------|----------------|
-| **Root email** | Use only for billing & critical tasks |
-| **Browser** | Use a separate profile labeled “AWS Root” |
-| **Passwords** | Store securely in a password manager |
-| **Shared devices** | Never sign in to AWS root on public machines |
-| **Future stages** | Root login will be locked down; daily use moves to IAM Admin user |
+## 🧠 Professional Insight
+This repository highlights essential **security and governance discipline** in cloud environments.  
+Clear documentation, separation of duties, and proactive billing controls are cornerstones of AWS best practices — valuable for roles in **Cloud Security, DevSecOps, and Architecture**.
 
 ---
 
-### 💬 GitHub Log Note
+## 🔖 Tags
+`#AWS` `#CloudSecurity` `#SolutionsArchitect` `#DevSecOps` `#BeginnerProject`
+
+---
+
+### © 2025 Aykhan Pashayev  
+Created for educational and professional portfolio use.  
+Part of a larger initiative to document secure, reproducible AWS architectures.
