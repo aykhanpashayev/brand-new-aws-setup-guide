@@ -25,8 +25,11 @@ This guide ensures every account is configured safely — with proper billing co
 ## 🧩 Project Folder Structure
 AWS-Account-Rebuild/
 ├── README.md ← main documentation (this file)
+
 ├── notes/ ← written explanations or configs
+
 ├── screenshots/ ← redacted images per stage
+
 └── resources/ ← reference files, PDFs, budgets, etc.
 
 ---
@@ -53,6 +56,7 @@ The key principle is **separation of concerns** — never mix production, study,
 
 ### 🔗 Console Paths
 Sign-up: https://portal.aws.amazon.com/billing/signup
+
 Root sign-in: https://console.aws.amazon.com/
 
 ---
