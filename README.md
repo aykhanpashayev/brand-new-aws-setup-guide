@@ -29,7 +29,7 @@ brand-new-aws-setup-guide/
 ---
 
 ## ⚙️ Stage 1 — Account Creation
-A new AWS account is created using a **dedicated email** and verified payment method.  
+A new AWS account is created using a **dedicated email** and verified payment method. Simply instead of using personal email, just create new one dedicated only for AWS example: aws.labs.yourname@gmail.com.
 The account is set to **Basic (Free)** support with region **N. Virginia (us-east-1)** for maximum service availability.  
 Only the root user is active at this stage and will later be secured and replaced by IAM administrators.
 
